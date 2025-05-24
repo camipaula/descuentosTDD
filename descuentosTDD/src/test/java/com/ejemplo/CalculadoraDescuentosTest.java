@@ -24,8 +24,16 @@ public class CalculadoraDescuentosTest {
         assertEquals(95.0, CalculadoraDescuentos.aplicarDescuentoFijo(100.0, 5.0));
     }
     
+    @Test
     public void testDescuentoAcumulado() {
-    
     assertEquals(85.0, CalculadoraDescuentos.aplicarDescuentoAcumulado(100.0, 10.0, 5.0));
-}
+    }
+
+    @Test
+    public void testPrecioFinal(){
+        double original = 200.0;
+        double esperado = 200 - (200 * 0.15) -10;
+        double resultado = CalculadoraDescuentos.aplicarDescuentoAcumulado(original, 15.0, 10.0);
+        assertEquals(esperado, resultado);
+    }
 }
