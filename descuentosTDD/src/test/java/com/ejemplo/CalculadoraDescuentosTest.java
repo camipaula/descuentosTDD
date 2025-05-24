@@ -23,4 +23,9 @@ public class CalculadoraDescuentosTest {
     public void testDescuentoFijo(){
         assertEquals(95.0, CalculadoraDescuentos.aplicarDescuentoFijo(100.0, 5.0));
     }
+    
+    public void testDescuentoAcumulado() {
+    
+    assertEquals(85.0, CalculadoraDescuentos.aplicarDescuentoAcumulado(100.0, 10.0, 5.0));
+}
 }

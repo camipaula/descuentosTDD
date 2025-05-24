@@ -9,4 +9,10 @@ public class CalculadoraDescuentos {
     public static double aplicarDescuentoFijo(double monto, double descuento){
         return monto - descuento;
     }
+
+    public static double aplicarDescuentoAcumulado(double monto, double porcentaje, double descuento) {
+    double conPorcentaje = aplicarDescuentoPorcentaje(monto, porcentaje);
+    return aplicarDescuentoFijo(conPorcentaje, descuento);
+}
+
 }
