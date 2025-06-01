@@ -36,4 +36,9 @@ public class CalculadoraDescuentosTest {
         double resultado = CalculadoraDescuentos.aplicarDescuentoAcumulado(original, 15.0, 10.0);
         assertEquals(esperado, resultado);
     }
+
+     // 🚫 Método no usado, violación para PMD
+    public void metodoNoUsado(){
+        int x = 100;
+    }
 }

@@ -15,4 +15,16 @@ public class CalculadoraDescuentos {
     return aplicarDescuentoFijo(conPorcentaje, descuento);
 }
 
+ // Este método viola reglas de PMD (método no usado y variable no usada)
+    public static void metodoConError() {
+        int x = 5;
+    }
+    
+//  Violaciones aquí:
+    public static void metodoProblematico() {
+        int a = 5; // ← nombre de variable muy corto (Checkstyle)
+        int b = 10; // ← también
+        int resultadoFinalSumaDeVariablesConNombresMalos = a + b; // ← línea demasiado larga
+        System.out.println(resultadoFinalSumaDeVariablesConNombresMalos);
+    }
 }
