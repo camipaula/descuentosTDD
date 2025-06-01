@@ -37,8 +37,5 @@ public class CalculadoraDescuentosTest {
         assertEquals(esperado, resultado);
     }
 
-     // 🚫 Método no usado, violación para PMD
-    public void metodoNoUsado(){
-        int x = 100;
-    }
+   
 }

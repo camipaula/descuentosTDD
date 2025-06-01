@@ -13,18 +13,20 @@ public class CalculadoraDescuentos {
     public static double aplicarDescuentoAcumulado(double monto, double porcentaje, double descuento) {
     double conPorcentaje = aplicarDescuentoPorcentaje(monto, porcentaje);
     return aplicarDescuentoFijo(conPorcentaje, descuento);
-}
+    }
 
- // Este método viola reglas de PMD (método no usado y variable no usada)
-    public static void metodoConError() {
+    //Este método viola reglas de PMD (método no usado y variable no usada)
+    public static void metodoInutil() {
         int x = 5;
     }
-    
-//  Violaciones aquí:
+
     public static void metodoProblematico() {
         int a = 5; // ← nombre de variable muy corto (Checkstyle)
         int b = 10; // ← también
         int resultadoFinalSumaDeVariablesConNombresMalos = a + b; // ← línea demasiado larga
         System.out.println(resultadoFinalSumaDeVariablesConNombresMalos);
     }
+
+
+
 }
