@@ -53,6 +53,6 @@ jobs:
         with:
           name: Maven-Reports
           path: |
-            /target/site/jacoco/jacoco.xml
-            /target/checkstyle-result.xml
-            /target/pmd.xml
+            target/site/jacoco/jacoco.xml
+            target/checkstyle-result.xml
+            target/pmd.xml
