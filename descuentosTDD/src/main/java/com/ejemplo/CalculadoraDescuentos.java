@@ -27,6 +27,13 @@ public class CalculadoraDescuentos {
         System.out.println(resultadoFinalSumaDeVariablesConNombresMalos);
     }
 
+     public static void metodoProblematico2() {
+        int a = 5; // ← nombre de variable muy corto (Checkstyle)
+        int b = 10; // ← también
+        int resultadoFinalSumaDeVariablesConNombresMalos = a + b; // ← línea demasiado larga
+        System.out.println(resultadoFinalSumaDeVariablesConNombresMalos);
+    }
+
 
 
 }
